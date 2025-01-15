@@ -22,7 +22,7 @@ public class ConsultaMyMemory {
         DadosTraducao traducao;
         try {
             traducao = mapper.readValue(json, DadosTraducao.class);
-        } catch (JsonProcessingException e){
+        } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
 
